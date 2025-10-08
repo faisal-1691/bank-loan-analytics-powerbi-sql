@@ -63,29 +63,112 @@ This project showcases an **end-to-end analytics pipeline** — from SQL-based d
 
 ---
 
-## 🖥 Power BI Dashboard Visualizations
+## 📊 Power BI Dashboard — Visual Storytelling
 
-###  1. Summary Dashboard
-Provides portfolio overview, KPIs, and Good vs Bad Loan metrics.
+The **Bank Loan Analytics Power BI Dashboard** is designed to transform raw SQL data into an intuitive and visually compelling story.  
+It features **interactive visuals, dynamic slicers, and KPI cards** that provide deep insights into loan performance and borrower behavior.
 
+The dashboard is structured into **three pages**, each serving a distinct analytical purpose:
+
+---
+
+###  1. Summary Dashboard — Executive Portfolio View
+
+The **Summary Page** gives a high-level overview of the bank’s loan portfolio performance and key indicators.  
+It acts as the **management view** where decision-makers can monitor overall trends at a glance.
+
+**Highlights:**
+- Displays **Total Applications**, **Funded Amount**, **Received Amount**, **Average Interest Rate**, and **Average DTI**
+- Compares **Month-to-Date (MTD)** vs **Month-over-Month (MoM)** changes  
+- Breaks down **Good Loans vs Bad Loans**
+- Visualizes **Loan Status Summary** (Fully Paid, Current, Charged Off)
+
+**Key Insights:**
+- 86.2% of all loans are categorized as *Good Loans* (healthy portfolio)
+- Total funded amount of **\$435.8M** and total received amount of **\$473.1M**
+
+ **Dashboard Preview:**
+  
 ![Summary Dashboard](visualization/summary.png)
 
 ---
 
-###  2. Overview Dashboard
-Shows loan application trends and breakdowns by month, state, purpose, and employment length.
+###  2. Overview Dashboard — Trend & Segment Analysis
+
+The **Overview Page** focuses on **time-series and categorical insights** to help analysts understand loan distribution and borrower behavior.
+
+**Highlights:**
+- Tracks **loan applications by month** to identify growth trends  
+- Geographic heat map showing **state-wise loan activity**
+- Displays loan segmentation by:
+  - **Purpose** (e.g., debt consolidation, car, credit card)
+  - **Term** (36 vs 60 months)
+  - **Employment Length**
+  - **Home Ownership**
+- Interactive slicers for filtering by **State**, **Grade**, **Purpose**, and **Loan Status**
+
+**Key Insights:**
+- Most loans are concentrated in the **36-month term category (73.2%)**
+- **Debt consolidation** is the top loan purpose across most states
+- Steady increase in applications observed throughout the year
+
+ **Dashboard Preview:**
 
 ![Overview Dashboard](visualization/overview.png)
 
 ---
 
-###  3. Details Dashboard
-Displays granular loan records with borrower-level data and performance metrics.
+###  3. Details Dashboard — Borrower-Level Deep Dive
+
+The **Details Page** provides granular, record-level information to allow analysts to explore individual loans and their repayment behavior.
+
+**Highlights:**
+- Interactive **data table** with columns like:
+  - Loan ID, Purpose, Grade, Subgrade, Issue Date  
+  - Funded Amount, Interest Rate, Installment, Amount Received
+- Dynamic filters for **State**, **Grade**, and **Loan Type (Good / Bad Loan)**
+- Use case: Perfect for auditors, analysts, or credit officers to validate specific loan records
+
+**Key Insights:**
+- Quick identification of loans with higher interest rates or lower repayments
+- Supports **root-cause analysis** for non-performing loans (NPLs)
+
+ **Dashboard Preview:**
 
 ![Details Dashboard](visualization/details.png)
 
 ---
+
+###  Dashboard Design & User Experience
+
+The dashboard follows best design practices for business analytics:
+- **Color Palette:** Deep navy blue with accent colors (orange, teal) for contrast  
+- **Navigation:** Side menu for quick page access (Summary → Overview → Details)  
+- **KPIs:** Clear numeric cards for instant trend comparisons  
+- **Interactivity:** Cross-filtering between visuals (clicking a state filters all charts)  
+- **Usability:** Responsive layout for clear viewing on desktop or wide screens
+
 ---
+
+###  Impact of the Dashboard
+
+- Empowers executives to **track loan performance in real time**
+- Helps analysts detect **risky borrower segments**
+- Enables **data-driven financial planning**
+- Builds a foundation for integrating **predictive modeling** in the future
+
+---
+
+###  Power BI File
+
+To explore or customize the report:
+- Open the Power BI file:  
+  📁 **`Power Bi DashBoard.pbix`**
+- Refresh data connections or re-point to your SQL database / CSV file  
+- Interact with slicers, visuals, and export results directly from Power BI
+
+---
+
 
 ##  SQL Queries 
 
@@ -337,4 +420,5 @@ Refresh visuals and explore dashboards interactively.
 ### Author
 
 Faisal Hossain Shaown
+
 Thank you for your interest in this project!
