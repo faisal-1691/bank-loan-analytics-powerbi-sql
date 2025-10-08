@@ -422,3 +422,8 @@ Refresh visuals and explore dashboards interactively.
 Faisal Hossain Shaown
 
 Thank you for your interest in this project!
+
+---
+⭐ **If you found this project helpful, give it a star on GitHub!**  
+It motivates me to share more projects on **Power BI, SQL, and Data Analytics** 🚀
+
